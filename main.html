@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img_icon/logo_footer.ico" />
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>WIPASSWORD</title>
+</head>
+
+<body>
+    <div class="intro">
+        <img src="./img_icon/logo_footer.ico" alt="">
+        <h1>WIPASSWORD</h1>
+
+        <div class="textbox">
+            <p>¿Quieres aumentar la seguridad de tus contraseñas?</p>
+        </div>
+
+
+        <div class="scroll-container">
+            <label>Desliza hacia abajo</label>
+            <div class="scroll-button">🡳</div>
+        </div>
+        <div class="content">
+            <!-- Contenido adicional aquí -->
+           
+            <div class="buttons" id="scrollButtons">
+                <a class="button-text-container" href="./versionBasica/generadorPswrd.html">
+                    <button class="boton1">
+                        Versión Básica
+                        <div class="button-text-container">
+                            <br> <br>
+                            <span class="button-text">
+                                <li>Generar contraseña segura</li> <br>
+                                <li>Longitud fija 8 caracteres</li>
+                            </span>
+                        </div>
+                        <br> <br><br> <br><br> <br><br>
+                        IR AHORA
+                    </button>
+                </a>
+
+                <a class="button-text-container" href="./formularios/registro.html">
+                    <button class="boton2">
+                        Versión Pro
+                        <div class="button-text-container">
+                            <br> <br>
+                            <!DOCTYPE html>
+                            <span class="button-text">
+                                <li>Generar contraseña segura</li> <br>
+                                <li>Longitud personalizable</li> <br>
+                                <li>Caracteres personalizables</li> <br>
+                                <li>Registro de contraseñas</li> <br>
+                            </span>
+                        </div>
+                        <br> <br>
+                        INICIAR SESIÓN
+                    </button>
+                </a>
+
+            </div>
+        </div>
+        <label>Elija una opción</label>
+        <div class="texttoexpl">
+            <p>¿ Porque es tan importante la seguridad de una contraseña ?</p>
+            <p class="textoexpl">Una contraseña segura es esencial para proteger tu información personal y digital.
+                Garantiza tu privacidad y evita accesos no autorizados al utilizar combinaciones únicas de letras,
+                números y caracteres especiales.</p>
+        </div>
+
+    </div>
+
+
+
+    <script>
+        window.onscroll = function () {
+            showScrollButtons();
+        };
+
+        function showScrollButtons() {
+            var buttonsDiv = document.getElementById("scrollButtons");
+            if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
+                buttonsDiv.classList.add('visible');
+            } else {
+                buttonsDiv.classList.remove('visible');
+            }
+        }
+    </script>
+</body>
+<footer>
+    <img src="./img_icon/logo_footer.ico" alt="">
+    <p  class="textoderechos">&copy; 2024 WIPASSWORD. Todos los derechos reservados.</p>
+</footer>
+
+</html>
